@@ -3,17 +3,15 @@
 // Lowercase:
 let personName: string = "MUHAMMAD SAQLAIN";
 /* let result = personName.toLocaleLowerCase();
-console.log(result); */                             // Method 1
-console.log(personName.toLocaleLowerCase());        // Method 2
-
+console.log(result); */ // Method 1
+console.log(personName.toLocaleLowerCase()); // Method 2
 
 // Uppercase:
 let person_Name: string = "muhammad saqlain";
 /* let _result = person_Name.toUpperCase();
-console.log(_result);*/                               // Method 1
+console.log(_result);*/ // Method 1
 console.log(person_Name.toUpperCase());
 
-
 // Title case:
-
-export{}
+let titlecae = "we shall solve it later";
+export {};
