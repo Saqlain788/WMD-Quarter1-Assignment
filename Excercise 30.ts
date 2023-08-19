@@ -3,11 +3,20 @@
 • Otherwise, print a generic greeting, such as Hello Eric, thank you for logging in again*/
 
 let userNames: string[] = ["Admin", "Saqlain", "Husnain", "Haider", "Adeel"];
-for (let i = 0; i < userNames.length; i++) {
-  let username = userNames[i];
-  if (username === "Admin") {
+// for (let i = 0; i < userNames.length; i++) {
+//   let username = userNames[i];
+//   if (username === "Admin") {
+//     console.log("Hello Admin, would you like to see a status report?");
+//   } else {
+//     console.log(`Hello ${username}, thank you for loggin in again`);
+//   }
+// }
+
+// by ForEach method
+userNames.forEach((user, index) => {
+  if (user === "Admin") {
     console.log("Hello Admin, would you like to see a status report?");
   } else {
-    console.log(`Hello ${users}, thank you for loggin in again`);
+    console.log(`${index}:Hello ${user}, thank you for loggin in again`);
   }
 });
