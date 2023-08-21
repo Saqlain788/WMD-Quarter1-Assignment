@@ -5,18 +5,33 @@
 • If the person is at least 13 years old but less than 20, print a message that the person is a teenager.
 • If the person is at least 20 years old but less than 65, print a message that the person is an adult.
 • If the person is age 65 or older, print a message that the person is an elder.*/
+
 import inquirer from "inquirer";
-let personAge: number = Number(prompt("What is your age"));
-if (personAge < 2) {
-  console.log("the person is baby");
-} else if (personAge >= 2 && personAge < 4) {
-  console.log("the person is todder");
-} else if (personAge >= 4 && personAge < 13) {
-  console.log("the person is kid");
-} else if (personAge >= 13 && personAge < 20) {
-  console.log("the person is teenager");
-} else if (personAge >= 20 && personAge < 65) {
-  console.log("the person is adult");
-} else {
-  console.log("the person is elder");
+
+async function main() {
+  const answers = await inquirer.prompt([
+    {
+      type: "number",
+      name: "personAge",
+      message: "What is your age?",
+    },
+  ]);
+
+  const personAge: number = answers.personAge;
+
+  if (personAge < 2) {
+    console.log("The person is a baby");
+  } else if (personAge >= 2 && personAge < 4) {
+    console.log("The person is a toddler");
+  } else if (personAge >= 4 && personAge < 13) {
+    console.log("The person is a kid");
+  } else if (personAge >= 13 && personAge < 20) {
+    console.log("The person is a teenager");
+  } else if (personAge >= 20 && personAge < 65) {
+    console.log("The person is an adult");
+  } else {
+    console.log("The person is an elder");
+  }
 }
+
+main();
