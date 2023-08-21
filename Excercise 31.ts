@@ -2,7 +2,7 @@
 • If the list is empty, print the message We need to find some users!
 • Remove all of the usernames from your array, and make sure the correct message is printed.*/
 
-import { userNames } from "./Excercise 30";
+import { userNames } from "./Excercise 30.js";
 if (userNames.length === 0) {
   console.log("we need to find some users!");
 } else {

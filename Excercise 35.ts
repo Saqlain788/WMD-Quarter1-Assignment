@@ -11,7 +11,7 @@ for (let i = 0; i < animals.length; i++) {
 
 // for loop to print message with each animal.
 for (let i = 0; i < animals.length; i++) {
-  console.log(` A ${animals[i]} would make a great pet`);
+  console.log(`A ${animals[i]} would make a great pet`);
 }
 
 // add a line to print final message.
