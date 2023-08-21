@@ -1,4 +1,3 @@
-"use strict";
 /*More Conditional Tests: You don’t have to limit the number of tests you create to 10. If you want to try more comparisons, write more tests. Have at least one True and one False result for each of the following:
 • Tests for equality and inequality with strings
 • Tests using the lower case function
@@ -31,3 +30,4 @@ console.log("OR OPERATOR:", num3 > 30 || num4 > 10);
 let fruits = ["Apple", "Banana", "Orange"];
 console.log("Fruit include in array:", fruits.includes("Apple"));
 console.log("Fruits include in array:", fruits.includes("Grapes"));
+export {};
