@@ -5,7 +5,7 @@
 • If the person is at least 13 years old but less than 20, print a message that the person is a teenager.
 • If the person is at least 20 years old but less than 65, print a message that the person is an adult.
 • If the person is age 65 or older, print a message that the person is an elder.*/
-
+import inquirer from "inquirer";
 let personAge: number = Number(prompt("What is your age"));
 if (personAge < 2) {
   console.log("the person is baby");
