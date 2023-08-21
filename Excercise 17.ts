@@ -4,21 +4,21 @@
 • Print a message to each of the two people still on your list, letting them know they’re still invited.
 • Remove the last two names from your list, so you have an empty list. Print your list to make sure you actually have an empty list at the end of your program.*/
 
-import updatedGuestList from "./Excercise 16";
+import { finalGuestList } from "./Excercise 16.js";
 // Solution:-
 //! Add a new line that prints a message saying that you can invite only two people for dinner.
 console.log('"You can invite only two people for dinner."');
 
 //! Removing guests untill 2 remains.
-for (let i = updatedGuestList.length - 1; i >= 2; i--) {
-  const removedguest = updatedGuestList.pop();
+for (let i = finalGuestList.length - 1; i >= 2; i--) {
+  const removedguest = finalGuestList.pop();
   console.log(`Sorry, Mr. ${removedguest}, you are not invited to dinner`);
 }
 //! Print messange to remaining two people stating that you're still invited.
-for (const remainingguest of updatedGuestList) {
+for (const remainingguest of finalGuestList) {
   console.log(`Mr. ${remainingguest}, you're still invited to dinner`);
 }
 
 //! Remove remaining last two person, showing empty array.
-updatedGuestList.splice(0, 2);
-console.log("Final Guest List:" + updatedGuestList);
+finalGuestList.splice(0, 2);
+console.log("Final Guest List:" + finalGuestList);

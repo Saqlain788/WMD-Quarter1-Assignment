@@ -5,7 +5,7 @@
 
 //* Solution:-
 // First Step: start program from Excercise 14.
-import { guestList } from "./Excercise 14";
+import { guestList } from "./Excercise 14.js";
 
 // Second Step: Add a print statement stating the name of the guest who can't make it.
 const guestWhoCantMakeIt = guestList.pop();

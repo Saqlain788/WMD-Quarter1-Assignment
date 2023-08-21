@@ -6,7 +6,7 @@
 • Print a new set of invitation messages, one for each person in your list. */
 
 // Start with your program from Exercise 15.
-import { Guestlist } from "./Excercise 15";
+import { Guestlist } from "./Excercise 15.js";
 // first step: add moreGuest in your Guestlist and print statement:
 let moreGuest = ["Usman", "Gulzar", "Aftab"];
 let finalGuestList = Guestlist.concat(moreGuest);
@@ -29,4 +29,4 @@ for (let m = 0; m < finalGuestList.length; m++) {
   );
 }
 
-export default finalGuestList;
+export { finalGuestList };
