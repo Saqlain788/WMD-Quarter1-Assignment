@@ -5,7 +5,7 @@ import { Magicians, show_magicians } from "./Excercise 41.js";
 const magicianNames = Magicians;
 
 // Make make_great() function
-function make_great(magicians: string[]): string[] {
+export function make_great(magicians: string[]): string[] {
   const greatMagicians: string[] = magicians.map((magician) => {
     return "the Great " + magician;
   });
@@ -13,7 +13,7 @@ function make_great(magicians: string[]): string[] {
   return greatMagicians;
 }
 
-const greatMagicianNames = make_great(magicianNames);
+export const greatMagicianNames = make_great(magicianNames);
 
 // call function of show magicians from Excercise 41 showing the list has been modified.
 show_magicians(greatMagicianNames);
