@@ -13,5 +13,16 @@ console.log(_result);*/ // Method 1
 console.log(person_Name.toUpperCase());
 
 // Title case:
-let titlecae = "we shall solve it later";
+const sentence: string = "Once upon a time, there is a thirsty crow";
+const titleCasedString: string = titleCase(sentence);
+
+function titleCase(input: string): string {
+  return input.toLowerCase().replace(/(?:^|\s)\w/g, (word) => {
+    return word.toUpperCase();
+  });
+}
+
+console.log("Original String:", sentence);
+console.log("Title Cased String:", titleCasedString);
+
 export {};
