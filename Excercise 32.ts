@@ -7,7 +7,7 @@
 // List of current usernames
 let current_users = ["Rizwan", "Abid", "Ali", "Sabir", "Mushtaq"];
 // List of new users.
-let new_users = ["ali", "rehman", "rasheed", "sabir", "usman"];
+let new_users = ["ali", "Rehman", "rasheed", "Sabir", "usman"];
 
 // Convert all current usernames to lowercase for case-insensitive comparison
 
