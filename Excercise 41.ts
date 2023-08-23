@@ -1,8 +1,8 @@
 /*Magicians: Make a array of magician’s names. Pass the array to a function called show_magicians(), which prints the name of each magician in the array.*/
 
 // Method 1 for of loop
-const Magicians: string[] = ["Ali", "Rizwan", "Atif"];
-function show_magicians(MagicianNames: string[]): void {
+export const Magicians: string[] = ["Ali", "Rizwan", "Atif"];
+export function show_magicians(MagicianNames: string[]): void {
   for (const name of MagicianNames) {
     console.log(name);
   }
