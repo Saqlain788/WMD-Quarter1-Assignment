@@ -3,11 +3,11 @@ The function should have one parameter that collects as many items as the functi
 Call the function three times, using a different number of arguments each time.*/
 
 // step 1. make the function sandwithItems()
-function sandwithItems(item: string[]): void {
-  console.log("Sandwitch Ordered:", item.join(" : "));
+function sandwithItems(item: Array<string>) {
+  console.log("Sandwitch Ordered with items:", item);
 }
 
-const item1: string[] = ["Chiken", "Vegetable", "Meat"];
+const item1: string[] = ["Chiken", "Vegetable", "cheese"];
 const item2: string[] = ["Club", "BBQ", "Fish"];
 const item3: string[] = ["Potato", "Egg Salad", "Creamy"];
 
